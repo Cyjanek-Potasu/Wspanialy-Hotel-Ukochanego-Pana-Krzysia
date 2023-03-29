@@ -129,7 +129,7 @@
         $id = $_REQUEST['id'];
         
         //sprawdzanie czy login jest zajęty
-
+//temp update
             //$sql = "INSERT INTO pracownicy (imie, nazwisko, pesel, login, haslo) VALUES ('$imie','$nazwisko','$pesel','$login','$haslo')";
             $sql = "UPDATE pracownicy SET imie = '$imie', nazwisko = '$nazwisko', pesel = '$pesel', login = '$login', haslo = '$haslo' WHERE nr_pracownika = '$id'";
             if($result = mysqli_query($connect, $sql)) {
